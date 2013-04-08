@@ -21,7 +21,7 @@ angular.module('btford.phonegap.notification',
         }, title, buttonName);
       }),
       confirm: phonegapReady(function (message, confirmCallback, title, buttonLabels) {
-        navigator.notification.alert(message, function () {
+        navigator.notification.confirm(message, function () {
           var that = this,
             args = arguments;
           
